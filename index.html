@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+         <link rel="stylesheet" href="assests/css/main.css"></link>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" ></script>
+    </head>
+    <body data-spy="scroll" data-target="MainNavBar">
+       <header>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">MESH MELO SHOP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Indoor</a>
+          <a class="dropdown-item" href="#">Outdoor</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Antique Furniture</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+       <li class="nav-item">
+     
+      <!--   LOGIN------------------------------------------------------------------------>
+      
+      <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">
+  Login
+ </a></li>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="width: 425px">
+     
+      <div class="modal-body text-center">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      
+           
+            <img id="profile-img" class="profile-img-card" src="assests/images/login.png" style="width: 100px;">
+            <p id="profile-name" class="profile-name-card"></p>
+            
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus style="margin-bottom: 10px;">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required style="margin-bottom: 10px; margin-top: 10px;">
+                
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Login</button>
+            </form><!-- /form -->
+            
+            <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+            <a href="#" class="forgot-password">
+                Forgot the password?
+            </a>
+       
+   
+      </div>
+      
+    </div>
+  </div>
+</div>
+      
+      <!---------END  LOGIN---->
+
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign up</a>
+      </li>
+    </ul>
+   
+  </div>
+  <!----------------------- login model ------------->
+  <div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</nav>
+<!--
+          <nav class="nav-belt" style="position: relative">
+           <div class="nav-left navbar-inverse " >
+               <div class="nav navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainNavBar">
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+                    <a class="navbar-brand" href="#">Mesh Melo Shop</a>
+                </div>
+           </div>
+            <div class="navbar nav-right navbar-inverse "  id="cm">
+              
+                
+                <ul class="nav collapse navbar-nav navbar-collapse" id="MainNavBar">
+                    <li class="lm active"><a href="#">Home</a></li>
+                    <li class="lm"><a href="#">About</a></li>
+                    <li class="lm"><a href="#">Contact</a></li>
+                    <li class="lm"><a href="#">Login</a></li>
+                    <li class="lm"><a href="#">Sign up</a></li>
+                </ul>
+               
+             
+               
+            </div>
+            </nav>
+-->
+            <nav class="logo mx-auto">
+                 <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="assests/images/logo2.png" alt="Mesh Melo " class="img-fluid" style="width: 200px;
+                z-index: -1;
+                 height: 200px;
+                position: absolute;
+                top: -68%;">
+                    </a>
+                     <a href="#" id="cart"><i class="fas fa-shopping-cart"> My Cart</i>
+                     </a>
+                </div>
+           </nav>  
+            
+                      
+                                <ul class="nav justify-content-center" id="category">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Sofas and Armchairs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Tables and Chairs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Storage Systems and Units</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Sleeping area and children's bedrooms</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Kid furniture</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Furniture components and hardware</a>
+  </li>
+  </ul>          
+             
+        </header>
+        
+        <main >
+        <div id="mainDiv">
+         
+          
+          <div class="row">
+              <div class="card column" style="width: 18rem;">
+  <div class="imag"><img class="card-img-top" src="assests/images/armchair-art-chair-696407.jpg" alt="Arm Chair"></div>
+  <div class="card-body">
+    <h6 class="card-title">Abbey Solid Wood Arm Chair in Provincial Teak Finish by Woodsworth</h6>
+    <p class="card-text">By Woodsworth</p>
+      <b>Rs.2000</b>
+    <a href="#" class="btn btn-primary btn-sm">ADD TO CART</a>
+  </div>
+</div>
+       
+        <div class="card column" style="width: 18rem;">
+  <div class="imag"><img class="card-img-top" src="assests/images/antique-961102_1280.png" alt="Arm Chair"></div>
+  <div class="card-body">
+    <h6 class="card-title">Modway Track Circular Dining Table in Wood</h6>
+    <p class="card-text">By Mothway</p>
+      <b>Rs.1000</b>
+    <a href="#" class="btn btn-primary btn-sm">ADD TO CART</a>
+  </div>
+</div>
+       
+        <div class="card column" style="width: 18rem;">
+  <div class="imag"><img class="card-img-top" src="assests/images/furniture-768766_1280.jpg" alt="Arm Chair"></div>
+  <div class="card-body">
+    <h6 class="card-title">Sudan One Seater Lounge Chair in White Colour by Furnitech</h6>
+    <p class="card-text">By Furnitech</p>
+      <b>Rs.20,000</b>
+    <a href="#" class="btn btn-primary btn-sm">ADD TO CART</a>
+  </div>
+</div>
+        
+         
+         
+          </div>
+<!-- ROW 2 -->
+           <div class="row">
+              <div class="card column" style="width: 18rem;">
+  <div class="imag"><img class="card-img-top" src="assests/images/architecture-1171462_1280.jpg" alt="Chair set"></div>
+  <div class="card-body">
+    <h6 class="card-title">Kevon Metal Chair in White Colour by Bohemiana</h6>
+    <p class="card-text">By Bohemiana</p>
+      <b>Rs.12,000</b>
+    <a href="#" class="btn btn-primary btn-sm">ADD TO CART</a>
+  </div>
+</div>
+       
+        <div class="card column" style="width: 18rem;">
+  <div class="imag"><img class="card-img-top" src="assests/images/bed-bedroom-clean-775219.jpg" alt="Arm Chair"></div>
+  <div class="card-body">
+    <h6 class="card-title">Ainu Single Bed with Trundle in Walnut Finish by Mintwud</h6>
+    <p class="card-text">by Mintwud</p>
+      <b>Rs.27,000</b>
+    <a href="#" class="btn btn-primary btn-sm">ADD TO CART</a>
+  </div>
+</div>
+       
+        <div class="card column" style="width: 18rem;">
+  <div class="imag"><img class="card-img-top" src="assests/images/sofa-3094153_640.jpg" alt="Arm Chair"></div>
+  <div class="card-body">
+    <h6 class="card-title">Alfredo LHS Two Seater Sofa with Lounger and Cushions in  Grey Colour by CasaCraft</h6>
+    <p class="card-text">by CasaCraft</p>
+      <b>Rs.9000</b>
+    <a href="#" class="btn btn-primary btn-sm">ADD TO CART</a>
+  </div>
+</div>
+        
+         
+         
+          </div>
+          
+                    
+    <!-- Row 3 -->                                    
+          
+          
+      <div class="row">
+              <div class="card column" style="width: 18rem;">
+  <div class="imag"><img class="card-img-top" src="assests/images/wooden-bench-3392273_1920.jpg" alt="Outdoor bench"></div>
+  <div class="card-body">
+    <h6 class="card-title">Latt Upholstered Bench</h6>
+    <p class="card-text">By Woodsworth</p>
+      <b>Rs.2000</b>
+    <a href="#" class="btn btn-primary btn-sm">ADD TO CART</a>
+  </div>
+</div>
+       
+        <div class="card column" style="width: 18rem;">
+  <div class="imag"><img class="card-img-top" src="assests/images/throne-2790789_1920.png" alt="Throne Chair"></div>
+  <div class="card-body">
+    <h6 class="card-title">RARE MID CENTURY CHESTERFIELD LUTYEN'S STYLE VICEROY'S OXBLOOD LEATHER ARMCHAIR</h6>
+    <p class="card-text">By Woodsworth</p>
+      <b>Rs.2000</b>
+    <a href="#" class="btn btn-primary btn-sm">ADD TO CART</a>
+  </div>
+</div>
+       
+        <div class="card column" style="width: 18rem;">
+  <div class="imag"><img class="card-img-top" src="assests/images/room-2066402_1920.jpg" alt="Arm Chair"></div>
+  <div class="card-body">
+    <h6 class="card-title">Stalley Solid Wood Arm Chair with Brown Uphosltery in Honey Oak Finish by Amberville</h6>
+    <p class="card-text">By Amberville</p>
+      <b>Rs.2000</b>
+    <a href="#" class="btn btn-primary btn-sm">ADD TO CART</a>
+  </div>
+</div>
+        
+         
+         
+          </div>      
+           </div>
+           
+        </main>
+        <footer>
+            <div class="foot">
+                <p>
+                     Copyright <i class="fa fa-copyright"></i> 2018 The Mesh Melo Shop limited.Mainted by <a href="#" style="color: beige">Meenakshi Sharma</a>.
+                </p>
+            </div>
+        </footer>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>  
+        <script src="assests/javascript/main.js"></script>
+    </body>
+    
+</html>

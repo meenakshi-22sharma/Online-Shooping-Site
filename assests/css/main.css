@@ -1,0 +1,181 @@
+/*--------------------GLOBAL FEATURE---------------------------*/
+a{
+    cursor: pointer;
+}
+
+.card{
+    cursor: pointer;
+}
+
+#navbarSupportedContent{
+   padding: 10px;
+/* background-color:darkturquoise ;
+    border-color: aquamarine;*/
+}
+
+#navbarSupportedContent ul li a{
+   
+    cursor: pointer;
+}
+
+#navbarSupportedContent ul li:hover{
+transition-timing-function: ease-in;
+background-color: black;
+}
+/*----------------the active list elements-------------*/       
+.active, .nav-link-hover{
+             transition-timing-function: ease-in;
+             background-color: black;
+             transition: 0.25s;
+    -moz-transition-delay: .25s; /* Firefox 4 */
+    -webkit-transition-delay: .25s; /* Safari and Chrome */
+    -o-transition-delay: .25s; /* Opera */
+         }
+/*----------company logo----------------------*/
+.logo{
+     position:absolute;
+    position: relative;
+     left: 50%;
+    height: 86px;
+    width: 50%;
+    margin-left: -50px !important;   50% of your logo width */
+    display: block;
+    
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 90px;
+/*  padding: 15px;*/
+  width: auto;
+   
+}
+
+/*-------------------------cart---------------*/
+
+#cart{
+  float: right;
+    margin-left: 100px;
+    text-decoration: none;
+    color: #E5FF57;
+    
+
+}
+#cart :hover{
+ color: #E5FF57;
+  text-shadow: 0 0 15px #39FF14;
+  transition: all 0.5s ease;
+    
+}
+/*----------------cart glow >size------*/
+
+@media only screen and (min-width: 500px) {
+   #cart :hover{
+ color: #E5FF57;
+  text-shadow: 0 0 15px #39FF14;
+  transition: all 0.5s ease;
+    transform: scale(1.2);
+}
+}
+
+/*--------------cart position < size ----------*/
+@media only screen and (max-width: 500px) {
+    #cart {
+       position: relative;
+        margin-right: -48px;
+    }
+}
+
+
+/*--------------------------category bar---------------------*/
+#category{
+    background-color: black
+}
+
+#category li a{
+ color: aliceblue; 
+}
+
+#category li a:hover{
+    background-color: #F6224B;
+    transition: all .2s;
+  transition: all .2s;
+}
+/*--------------shopping items-------*/
+#mainDiv{
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+   
+}
+#mainDiv::before{
+      position: fixed;
+  z-index: -10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+   background-image:url(branch-color-coniferous-702152.jpg);
+  background-position: 50% 5%;
+  background-size: cover;
+  transition: all .6s;
+}
+#mainDiv:hover::before {
+  opacity: .8;
+  filter: blur(2px);
+    filter:blur(2px);
+    -o-filter:blur(2px);
+    -ms-filter:blur(2px);
+    -moz-filter:blur(2px);
+    -webkit-filter:blur(2px);
+}
+
+/*--------------------------- card column-------------*/
+
+.card{
+    margin: 30px;
+    
+}
+
+.card:hover{
+    transform:scale(1.06);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 7px white;
+}
+.row{
+    margin-left:50px;
+     margin-right:50px;
+    padding-left: 43px;
+}
+
+.imag{
+    max-height: 200px;
+}
+
+.imag img{
+    height: 200px;
+}
+
+
+
+/*--------------Footer--------------*/
+footer{
+    background: black;
+    height: 60px;
+}
+
+.foot{
+    padding-top: 20px;
+}
+
+footer p{
+    font-size: 1.2vw;
+    font-family:sans-serif;
+    text-align: center;
+    color: darkgray
+}
